@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clicker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    </head>
+    
+    <body>
+        <script>
+            var clicks = 0;
+            function myFunction()
+            {
+                clicks = clicks + 1;
+                document.getElementById("demo").innerHTML="You clicked the button " + String(clicks) + " times.";
+            }
+        </script>
+        <p id="demo">You clicked the button 0 times.</p>
+        <button type="button"onclick="myFunction()">Click me</button>
+    </body>
+</html>
