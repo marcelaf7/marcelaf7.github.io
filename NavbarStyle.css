@@ -5,7 +5,7 @@
         left: 0;
         right: 0;
         overflow: hidden;
-        z-index: 99;
         background-image: url('images/NavBarBackground.svg');
         background-color: #4B84DF;
+        z-index: 99;
     }
