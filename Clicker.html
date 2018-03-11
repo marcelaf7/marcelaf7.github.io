@@ -4,7 +4,7 @@
         <title>Marcel Fiore Online Portfolio - Clicker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <link href="StyleSheet.css" rel="stylesheet" type="text/css">
-
+        <script src="Clicker.js"></script>
     </head>
     
     <header>
@@ -39,49 +39,9 @@
     </header>
 
     <body style="background-color:#D6E5FF; margin-top: 55px; text-align: center;">
-        <script>
-            var clicks = 0;
-            var interns = 0;
-            var hackers = 0;
-            var myVar = setInterval(idle, 1000);
-
-            function idle()
-            {
-                clicks += interns + (hackers * 10);
-                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
-            }
-
-            function buyIntern()
-            {
-                if(clicks >= 10)
-                {
-                    clicks -= 10;
-                    interns += 1;
-                    document.getElementById("interns").innerHTML="Interns: " + String(interns);
-                }
-                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
-            }
-
-            function buyHacker()
-            {
-                if(clicks >= 100)
-                {
-                    clicks -= 100;
-                    hackers += 1;
-                    document.getElementById("hackers").innerHTML="Hackers: " + String(hackers);
-                }
-                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
-            }
-
-            function clicked()
-            {
-                clicks += 1;
-                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
-            }
-        </script>
         <div style="line-height: normal;">
             <div style="background-color: #FFFFFF; display: inline-block; line-height: normal; vertical-align: middle; width: 100%; text-align: center;">
-                <p id="clicks">You clicked the button 0 times.</p>
+                <p id="clicks">Clicks: 0</p>
                 <button style="width: 50%; height: 50px; align-self: middle; margin: 10px;" onclick="clicked()">Click Me</button>
             </div>
             <button onclick="buyIntern()" style="display: inline-block; line-height: normal; vertical-align: middle; margin: 25px;">
