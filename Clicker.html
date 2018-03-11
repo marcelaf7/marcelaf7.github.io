@@ -38,17 +38,67 @@
         </nav>
     </header>
 
-    <body style="background-color:#D6E5FF; margin-top: 100px">
+    <body style="background-color:#D6E5FF; margin-top: 55px; text-align: center;">
         <script>
             var clicks = 0;
-            function myFunction()
+            var interns = 0;
+            var hackers = 0;
+            var myVar = setInterval(idle, 1000);
+
+            function idle()
             {
-                clicks = clicks + 1;
-                document.getElementById("demo").innerHTML="You clicked the button " + String(clicks) + " times.";
+                clicks += interns + (hackers * 10);
+                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
+            }
+
+            function buyIntern()
+            {
+                if(clicks >= 10)
+                {
+                    clicks -= 10;
+                    interns += 1;
+                    document.getElementById("interns").innerHTML="Interns: " + String(interns);
+                }
+                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
+            }
+
+            function buyHacker()
+            {
+                if(clicks >= 100)
+                {
+                    clicks -= 100;
+                    hackers += 1;
+                    document.getElementById("hackers").innerHTML="Hackers: " + String(hackers);
+                }
+                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
+            }
+
+            function clicked()
+            {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML="You clicked the button " + String(clicks) + " times.";
             }
         </script>
-        <p id="demo">You clicked the button 0 times.</p>
-        <img src="images/ClickmeButton.png" alt="Click me" style="width:100px;height:50;border:0;" onclick="myFunction()">
+        <div style="line-height: normal;">
+            <div style="background-color: #FFFFFF; display: inline-block; line-height: normal; vertical-align: middle; width: 100%; text-align: center;">
+                <p id="clicks">You clicked the button 0 times.</p>
+                <button style="width: 50%; height: 50px; align-self: middle; margin: 10px;" onclick="clicked()">Click Me</button>
+            </div>
+            <button onclick="buyIntern()" style="display: inline-block; line-height: normal; vertical-align: middle; margin: 25px;">
+                <h3 id="interns">Interns: 0</h3>
+                <h4>Intern costs 10 clicks</h4>
+                <p>Hire an intern to click for you</p>
+                <p>Each intern clicks once per second</p>
+            </button>
+            <button onclick="buyHacker()" style="display: inline-block; line-height: normal; vertical-align: middle; margin: 25px;">
+                <h3 id="hackers">Hackers: 0</h3>
+                <h4>Hacker costs 100 clicks</h4>
+                <p>Hackers can hack a botnet to click for you</p>
+                <p>Each hacker adds 10 clicks per second</p>
+            </button>
+        </div>
+
+
         <h4 style="position: absolute; bottom: 0;">&copy; Marcel Fiore 2018<h4>
     </body>
 </html>
