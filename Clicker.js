@@ -10,7 +10,7 @@ var programmerPrice = 0;
 var programmerSpeed = 0;
 var hackers = 0;
 var hackerPrice = 1000;
-var hackerSpeed = 0;
+var hackerSpeed = 10;
 var myVar = setInterval(idle, 1000);
 
 function update()
