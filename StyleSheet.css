@@ -1,3 +1,7 @@
+body, header, footer {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 #navbar
 {
     z-index: 99;
