@@ -1,16 +1,18 @@
 var clicks = 0;
+
 var interns = 0;
 var internPrice = 50;
 var internSpeed = 1;
 var employees = 0;
-var employeePrice = 0;
-var employeeSpeed = 0;
+var employeePrice = 200;
+var employeeSpeed = 5;
 var programmers = 0;
-var programmerPrice = 0;
-var programmerSpeed = 0;
+var programmerPrice = 1000;
+var programmerSpeed = 20;
 var hackers = 0;
-var hackerPrice = 1000;
-var hackerSpeed = 10;
+var hackerPrice = 10000;
+var hackerSpeed = 100;
+
 var myVar = setInterval(idle, 1000);
 
 function update()
@@ -53,6 +55,7 @@ function buyProgrammer()
         programmers += 1;
         document.getElementById("programmers").innerHTML="Programmers: " + String(programmers);
     }
+    update();
 }
 
 function buyHacker()
@@ -63,7 +66,7 @@ function buyHacker()
         hackers += 1;
         document.getElementById("hackers").innerHTML="Hackers: " + String(hackers);
     }
-    update;        
+    update();        
 }
 
 function clicked()
