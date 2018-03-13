@@ -51,23 +51,18 @@
                 <img src="images/Resume.svg" alt="Resume" onmouseover="this.src='images/ResumeHover.svg';" onmouseout="this.src='images/Resume.svg';">
             </a>
         </div>
-    </header>
+        <script>
+            function DropDownClick()
+            {
+                var DropDownMenu = document.getElementById("DropDownMenu");
 
-    <script>
-        function DropDownClick()
-        {
-            var DropDownMenu = document.getElementById("DropDownMenu");
-            console.log(DropDownMenu.style.visibility);
-            if(DropDownMenu.style.visibility == "visible")
-            {
-                DropDownMenu.style.visibility = "hidden";
+                if(DropDownMenu.style.visibility == "visible")
+                    DropDownMenu.style.visibility = "hidden";
+                else
+                    DropDownMenu.style.visibility = "visible";
             }
-            else
-            {
-                DropDownMenu.style.visibility = "visible";
-            }
-        }
-    </script>
+        </script>
+    </header>
 
     <body style="background-color:#D6E5FF;"> 
         <div style="background-color: #B3D5FF; line-height: normal;">

@@ -48,6 +48,6 @@ body, header, footer {
 {
     #DropDownMenu
     {
-        visibility: hidden;
+        visibility: hidden !important; /*Marked important so it will override Javascript if screen size changes*/
     }
 }
