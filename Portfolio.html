@@ -23,7 +23,7 @@
                 --></a>
             </nav>
 
-            <nav style="position: fixed; right: 0;"><!--
+            <nav id="NavButtons" style="position: fixed; right: 0;"><!--
                 --><a href="Portfolio.html"><!--
                     --><img src="images/Portfolio.svg" alt="About Me" onmouseover="this.src='images/PortfolioHover.svg';" onmouseout="this.src='images/Portfolio.svg';"><!--
                 --></a><!--
@@ -34,7 +34,34 @@
                     --><img src="images/Resume.svg" alt="Resume" onmouseover="this.src='images/ResumeHover.svg';" onmouseout="this.src='images/Resume.svg';"><!--
                 --></a>
             </nav>
+
+            <nav id="DropDownButton" style="position: fixed; right: 0;">
+                <img src="images/DropDown.svg" alt="DropDown" onclick="DropDownClick()">
+            </nav>
         </nav>
+
+        <div id="DropDownMenu">
+            <a href="Portfolio.html" style="position: fixed; right:0;">
+                <img src="images/Portfolio.svg" alt="About Me" onmouseover="this.src='images/PortfolioHover.svg';" onmouseout="this.src='images/Portfolio.svg';">
+            </a>
+            <a href="Clicker.html" style="position: fixed; right:0; margin-top: 50px">
+                <img src="images/Clicker.svg" alt="Clicker" onmouseover="this.src='images/ClickerHover.svg';" onmouseout="this.src='images/Clicker.svg';">
+            </a>
+            <a href="Resume.html" style="position: fixed; right:0; margin-top: 100px">
+                <img src="images/Resume.svg" alt="Resume" onmouseover="this.src='images/ResumeHover.svg';" onmouseout="this.src='images/Resume.svg';">
+            </a>
+        </div>
+        <script>
+            function DropDownClick()
+            {
+                var DropDownMenu = document.getElementById("DropDownMenu");
+
+                if(DropDownMenu.style.visibility == "visible")
+                    DropDownMenu.style.visibility = "hidden";
+                else
+                    DropDownMenu.style.visibility = "visible";
+            }
+        </script>
     </header>
 
     <body style="background-color:#D6E5FF; margin-top: 55px;"> 
