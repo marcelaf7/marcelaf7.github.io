@@ -70,9 +70,10 @@
             <div style="background-color: #B3D5FF; display: inline-block; line-height: normal; vertical-align: middle; width: 100%; text-align: center;">
                 <p style="margin-top: 25px" id="clicks">Clicks: 0</p>
                 <button style="width: 50%; height: 50px; align-self: middle; margin: 10px; margin-bottom: 40px;" onclick="clicked()">Click Me</button>
+                <p id="tutorial" style="color: #CA0000; visibility: hidden;">Buy an intern to click for you!</p>
             </div>
 
-            <button onclick="buyIntern()" style="background-color: #FFFFFF; display: inline-block; line-height: normal; vertical-align: middle; margin: 25px; height: 150px; -webkit-appearance: none;">
+            <button id="internButton" onclick="buyIntern()" style="background-color: #FFFFFF; display: inline-block; line-height: normal; vertical-align: middle; margin: 25px; height: 150px; -webkit-appearance: none;">
                 <h3 id="interns">Interns: <script>document.write(interns)</script></h3>
                 <h4 id="internPrice">Intern costs <script>document.write(internPrice)</script> clicks</h4>
                 <p>Hire an intern to click for you</p>

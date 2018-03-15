@@ -13,6 +13,8 @@ var hackers = 0;
 var hackerPrice = 10000;
 var hackerSpeed = 100;
 
+var tutorial = false;
+
 var myVar = setInterval(idle, 1000);
 
 function update()
@@ -20,10 +22,31 @@ function update()
     document.getElementById("clicks").innerHTML="Clicks: " + String(clicks);
 }
 
+function updateButtonColors()
+{
+    if(clicks >= internPrice)
+    {
+        tutorial = true;
+        document.getElementById("tutorial").style.visibility = "visible";
+        document.getElementById("internButton").style.backgroundColor = "#33FF36";
+        setTimeout(endTutorial, 10000);
+    }
+}
+
+function endTutorial()
+{
+    document.getElementById("tutorial").style.visibility = "hidden";
+    document.getElementById("internButton").style.backgroundColor = "#FFFFFF";
+}
+
 function idle()
 {
     clicks += (interns * internSpeed) + (employees * employeeSpeed) + (programmers * programmerSpeed) + (hackers * hackerSpeed);
     update();
+    if(!tutorial)
+    {
+        updateButtonColors();
+    }
 }
 
 function buyIntern()
