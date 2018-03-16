@@ -13,22 +13,75 @@ var hackers = 0;
 var hackerPrice = 10000;
 var hackerSpeed = 100;
 
+var buttonNotReadyColor = "#4869AA";
+var buttonReadyColor = "#699BFF";
+var textNotReadyColor = "#6F6F6F";
+var textReadyColor = "#000000";
+
 var tutorial = false;
 
-var myVar = setInterval(idle, 1000);
+var myVar = setInterval(autoClick, 1000);
 
 function update()
 {
     document.getElementById("clicks").innerHTML="Clicks: " + String(clicks);
+    updateButtonColors();
 }
 
 function updateButtonColors()
 {
     if(clicks >= internPrice)
     {
+        document.getElementById("internButton").style.backgroundColor = buttonReadyColor;
+        document.getElementById("internButton").style.color = textReadyColor;
+    }
+    else
+    {
+        document.getElementById("internButton").style.backgroundColor = buttonNotReadyColor;
+        document.getElementById("internButton").style.color = textNotReadyColor;
+    }
+
+    if(clicks >= employeePrice)
+    {
+        document.getElementById("employeeButton").style.backgroundColor = buttonReadyColor;
+        document.getElementById("employeeButton").style.color = textReadyColor;
+    }
+    else
+    {
+        document.getElementById("employeeButton").style.backgroundColor = buttonNotReadyColor;
+        document.getElementById("employeeButton").style.color = textNotReadyColor;
+    }
+
+    if(clicks >= programmerPrice)
+    {
+        document.getElementById("programmerButton").style.backgroundColor = buttonReadyColor;
+        document.getElementById("programmerButton").style.color = textReadyColor;
+    }
+    else
+    {
+        document.getElementById("programmerButton").style.backgroundColor = buttonNotReadyColor;
+        document.getElementById("programmerButton").style.color = textNotReadyColor;
+    }
+
+    if(clicks >= hackerPrice)
+    {
+        document.getElementById("hackerButton").style.backgroundColor = buttonReadyColor;
+        document.getElementById("hackerButton").style.color = textReadyColor;
+    }
+    else
+    {
+        document.getElementById("hackerButton").style.backgroundColor = buttonNotReadyColor;
+        document.getElementById("hackerButton").style.color = textNotReadyColor;
+    }
+}
+
+function startTutorial()
+{
+    if(clicks >= internPrice)
+    {
         tutorial = true;
         document.getElementById("tutorial").style.visibility = "visible";
-        document.getElementById("internButton").style.backgroundColor = "#33FF36";
+        document.getElementById("internButton").style.backgroundColor = buttonReadyColor;
         setTimeout(endTutorial, 10000);
     }
 }
@@ -36,16 +89,16 @@ function updateButtonColors()
 function endTutorial()
 {
     document.getElementById("tutorial").style.visibility = "hidden";
-    document.getElementById("internButton").style.backgroundColor = "#FFFFFF";
+    document.getElementById("internButton").style.backgroundColor = buttonNotReadyColor;
 }
 
-function idle()
+function autoClick()
 {
     clicks += (interns * internSpeed) + (employees * employeeSpeed) + (programmers * programmerSpeed) + (hackers * hackerSpeed);
     update();
     if(!tutorial)
     {
-        updateButtonColors();
+        startTutorial();
     }
 }
 
