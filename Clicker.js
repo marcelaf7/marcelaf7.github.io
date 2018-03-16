@@ -13,7 +13,7 @@ var hackers = 0;
 var hackerPrice = 10000;
 var hackerSpeed = 100;
 
-var buttonNotReadyColor = "#4869AA";
+var buttonNotReadyColor = "#8EA4D0";
 var buttonReadyColor = "#699BFF";
 var textNotReadyColor = "#6F6F6F";
 var textReadyColor = "#000000";
@@ -81,7 +81,6 @@ function startTutorial()
     {
         tutorial = true;
         document.getElementById("tutorial").style.visibility = "visible";
-        document.getElementById("internButton").style.backgroundColor = buttonReadyColor;
         setTimeout(endTutorial, 10000);
     }
 }
@@ -89,7 +88,6 @@ function startTutorial()
 function endTutorial()
 {
     document.getElementById("tutorial").style.visibility = "hidden";
-    document.getElementById("internButton").style.backgroundColor = buttonNotReadyColor;
 }
 
 function autoClick()
