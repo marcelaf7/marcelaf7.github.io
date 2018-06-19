@@ -1,5 +1,15 @@
+html {
+    /*This is required for the footer to stick to the bottom of the page properly*/
+    position: relative;
+    min-height: 100%;
+}
+
 body, header, footer {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin-bottom: 55px;
 }
 
 a {
@@ -62,4 +72,21 @@ a {
     #DropDownMenu {
         visibility: hidden !important; /*Marked important so it will override Javascript if screen size changes*/
     }
+}
+
+footer h4 {
+    margin: 0;
+    line-height: 50px;
+}
+
+footer {
+    background-color:#81B1FF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-style: solid;
+    border-top-width: 5px;
+    height: 50px;
+    text-align: center;
 }
