@@ -58,6 +58,47 @@ a {
     visibility: hidden;
 }
 
+#container {
+    margin-top: 10px;
+    background-color: #C2D7E1;
+}
+
+.tabbed-panel {
+    overflow: hidden;
+    background-color: #D6E5FF;
+}
+
+.tabbed-panel h3 {
+    margin: 0;
+}
+
+.tabbed-panel button {
+    border-radius: 10px 10px 0px 0px;
+    background-color: #9AAEB6;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border: 1px solid #ABC1CA;
+    width: 33.33%;
+}
+
+.tabbed-panel button:hover {
+    background-color: #ABC1CA;
+}
+
+.tabbed-panel button.active {
+    background-color: #C2D7E1;
+    border-bottom-color: #C2D7E1;
+}
+
+.tab-contents {
+    display: none;
+    padding: 6px 12px;
+}
+
 @media screen and (max-width: 575px) {
     #DropDownButton {
         visibility: visible;
