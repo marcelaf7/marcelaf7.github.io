@@ -60,7 +60,7 @@ a {
 
 #container {
     margin-top: 10px;
-    background-color: #C2D7E1;
+    background-color: #9AC2FE;
 }
 
 .tabbed-panel {
@@ -74,24 +74,24 @@ a {
 
 .tabbed-panel button {
     border-radius: 10px 10px 0px 0px;
-    background-color: #9AAEB6;
+    background-color: #7F9FD0;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    border: 1px solid #ABC1CA;
+    border: 1px solid #8CB1E7;
     width: 33.33%;
 }
 
 .tabbed-panel button:hover {
-    background-color: #ABC1CA;
+    background-color: #8CB1E7;
 }
 
 .tabbed-panel button.active {
-    background-color: #C2D7E1;
-    border-bottom-color: #C2D7E1;
+    background-color: #9AC2FE;
+    border-bottom-color: #9AC2FE;
 }
 
 .tab-contents {
