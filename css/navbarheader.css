@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 390px) {
     #dropdown-menu {
         visibility: hidden !important; /*Marked important so it will override Javascript if screen size changes*/
     }
