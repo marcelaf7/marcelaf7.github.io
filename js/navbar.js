@@ -22,9 +22,6 @@ var html =
                     +"--></a><!--"
                     +"--><a class='nav-button' href='Clicker.html'><!--"
                         +"--><img src='images/Clicker.svg' alt='Clicker'><!--"
-                    +"--></a><!--"
-                    +"--><a class='nav-button' href='Resume.html'><!--"
-                        +"--><img src='images/Resume.svg' alt='Resume'><!--"
                     +"--></a>"
                 +"</nav>"
 
@@ -39,9 +36,6 @@ var html =
                 +"</a>"
                 +"<a class='nav-button' href='Clicker.html' style='position: fixed; right:0; margin-top: 50px'>"
                     +"<img src='images/Clicker.svg' alt='Clicker'>"
-                +"</a>"
-                +"<a class='nav-button' href='Resume.html' style='position: fixed; right:0; margin-top: 100px'>"
-                    +"<img src='images/Resume.svg' alt='Resume'>"
                 +"</a>"
             +"</div>"
             ;
