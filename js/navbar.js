@@ -1,4 +1,4 @@
-var html = 
+var html =
             "<link href='css/navbarheader.css' rel='stylesheet' type='text/css'>"
             +"<nav id='navbar'>"
                 +"<nav id='social-buttons-container' style='position: fixed; left: 0;'><!--"
@@ -20,6 +20,9 @@ var html =
                     +"--><a class='nav-button' href='index.html'><!--"
                         +"--><img src='images/Home.svg' alt='Home'><!--"
                     +"--></a><!--"
+                    +"--><a class='nav-button' href='blog'><!--"
+                        +"--><img src='images/Blog.svg' alt='Blog'><!--"
+                    +"--></a><!--"
                     +"--><a class='nav-button' href='Clicker.html'><!--"
                         +"--><img src='images/Clicker.svg' alt='Clicker'><!--"
                     +"--></a>"
@@ -34,13 +37,16 @@ var html =
                 +"<a class='nav-button' href='index.html' style='position: fixed; right:0;'>"
                     +"<img src='images/Home.svg' alt='Home'>"
                 +"</a>"
+                +"--><a class='nav-button' href='blog'><!--"
+                    +"--><img src='images/Blog.svg' alt='Blog'><!--"
+                +"--></a><!--"
                 +"<a class='nav-button' href='Clicker.html' style='position: fixed; right:0; margin-top: 50px'>"
                     +"<img src='images/Clicker.svg' alt='Clicker'>"
                 +"</a>"
             +"</div>"
             ;
 
-function DropDownClick() 
+function DropDownClick()
 {
     var DropDownMenu = document.getElementById("dropdown-menu");
     if(DropDownMenu.style.visibility == "visible")
@@ -49,7 +55,7 @@ function DropDownClick()
         DropDownMenu.style.visibility = "visible";
 }
 
-function loadHeader() 
+function loadHeader()
 {
     console.log("Header loaded");
     document.getElementById("navbar-header").innerHTML = html;
