@@ -49,6 +49,7 @@ a {
 .tabbed-panel button {
     border-radius: 10px 10px 0px 0px;
     background-color: #7F9FD0;
+    color: #000;
     float: left;
     border: none;
     outline: none;
