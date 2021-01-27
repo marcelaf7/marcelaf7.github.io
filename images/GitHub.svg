@@ -1,1 +1,72 @@
-<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 50 50" width="50" height="50"><defs><clipPath id="_clipPath_HlIqlbYY71bMBw3jTdTCcMbubafJMRka"><rect width="50" height="50"/></clipPath></defs><g clip-path="url(#_clipPath_HlIqlbYY71bMBw3jTdTCcMbubafJMRka)"><path d=" M 25 9.113 C 16.005 9.113 8.711 16.406 8.711 25.404 C 8.711 32.6 13.378 38.706 19.852 40.86 C 20.666 41.009 20.964 40.506 20.964 40.075 C 20.964 39.688 20.95 38.664 20.942 37.304 C 16.411 38.288 15.455 35.12 15.455 35.12 C 14.714 33.238 13.646 32.737 13.646 32.737 C 12.167 31.726 13.758 31.747 13.758 31.747 C 15.393 31.862 16.253 33.426 16.253 33.426 C 17.706 35.915 20.066 35.197 20.994 34.78 C 21.142 33.727 21.563 33.009 22.028 32.602 C 18.411 32.191 14.608 30.793 14.608 24.551 C 14.608 22.773 15.243 21.319 16.285 20.18 C 16.118 19.768 15.558 18.112 16.445 15.869 C 16.445 15.869 17.813 15.431 20.924 17.539 C 22.223 17.178 23.617 16.997 25.002 16.991 C 26.385 16.997 27.779 17.178 29.08 17.539 C 32.19 15.431 33.555 15.869 33.555 15.869 C 34.444 18.112 33.885 19.768 33.717 20.18 C 34.761 21.319 35.391 22.773 35.391 24.551 C 35.391 30.809 31.582 32.186 27.953 32.589 C 28.538 33.092 29.059 34.086 29.059 35.606 C 29.059 37.784 29.039 39.541 29.039 40.075 C 29.039 40.511 29.332 41.017 30.159 40.858 C 36.626 38.7 41.289 32.598 41.289 25.404 C 41.29 16.406 33.996 9.113 25 9.113 Z " fill-rule="evenodd" fill="rgb(255,255,255)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="isolation:isolate"
+   viewBox="0 0 50 50"
+   width="50"
+   height="50"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="GitHub.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="830"
+     inkscape:window-height="1052"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="18.961864"
+     inkscape:cy="25"
+     inkscape:window-x="2"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg11" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="_clipPath_HlIqlbYY71bMBw3jTdTCcMbubafJMRka">
+      <rect
+         width="50"
+         height="50"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#_clipPath_HlIqlbYY71bMBw3jTdTCcMbubafJMRka)"
+     id="g9"
+     style="fill:#000000;fill-opacity:1">
+    <path
+       d="m 25,9.113 c -8.995,0 -16.289,7.293 -16.289,16.291 0,7.196 4.667,13.302 11.141,15.456 0.814,0.149 1.112,-0.354 1.112,-0.785 0,-0.387 -0.014,-1.411 -0.022,-2.771 -4.531,0.984 -5.487,-2.184 -5.487,-2.184 -0.741,-1.882 -1.809,-2.383 -1.809,-2.383 -1.479,-1.011 0.112,-0.99 0.112,-0.99 1.635,0.115 2.495,1.679 2.495,1.679 1.453,2.489 3.813,1.771 4.741,1.354 0.148,-1.053 0.569,-1.771 1.034,-2.178 -3.617,-0.411 -7.42,-1.809 -7.42,-8.051 0,-1.778 0.635,-3.232 1.677,-4.371 -0.167,-0.412 -0.727,-2.068 0.16,-4.311 0,0 1.368,-0.438 4.479,1.67 1.299,-0.361 2.693,-0.542 4.078,-0.548 1.383,0.006 2.777,0.187 4.078,0.548 3.11,-2.108 4.475,-1.67 4.475,-1.67 0.889,2.243 0.33,3.899 0.162,4.311 1.044,1.139 1.674,2.593 1.674,4.371 0,6.258 -3.809,7.635 -7.438,8.038 0.585,0.503 1.106,1.497 1.106,3.017 0,2.178 -0.02,3.935 -0.02,4.469 0,0.436 0.293,0.942 1.12,0.783 6.467,-2.158 11.13,-8.26 11.13,-15.454 C 41.29,16.406 33.996,9.113 25,9.113 Z"
+       id="path7"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd;fill-opacity:1" />
+  </g>
+</svg>
