@@ -1,0 +1,200 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Marcel Fiore}
+\newcommand{\CVTitle}{Marcel Fiore's Resume}
+\newcommand{\CVWebpage}{http://marcelfiore.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={C++, CPP,  Python, Angular, Java, Linux, Get, Perforce, Docker, Scrum, Agile, TDD, OOP, GitFlow, OSI Model},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+Broomfield, CO
+\,\SubBulletSymbol\,
+720-218-5900
+\par
+\href{mailto:mf@marcelfiore.com}{mf@marcelfiore.com}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SUMMARY OF QUALIFICATIONS %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Summary Of Qualifications}
+{Summary Of Qualifications}
+{PDF:SummaryOfQualifications}
+
+\BulletItem Programming Languages: C++, Python, Angular(JavaScript, HTML, CSS), Java
+
+\Gap
+\BulletItem Technologies: Linux (Debian, RedHat), Git, GitLab, CI/CD, Perforce Helix, Docker
+
+\Gap
+\BulletItem Knowledge: Scrum (SAFe), Agile, Test Driven Development, Object Oriented Design, GitFlow, OSI Model
+
+
+%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional Experience}
+{Professional Experience}
+{PDF:ProfessionalExperience}
+
+\Entry
+\href{https://www.caci.com/}{\textbf{CACI}},  Westminster, CO
+\hfill
+\DatestampYMD{2019}{05}{20} --
+\DatestampYMD{2021}{02}{28}
+\BulletItem Software Engineer
+\begin{Detail}
+\SubBulletItem Created a simulator of LTE and UMTS mobiles to improve a minutes-long testing process to a near-instant process.
+\SubBulletItem Added new features and fixed bugs in simulator to meet customer vision using C++, Python and Angular.
+\SubBulletItem Developed a tool to easily diagnose Linux devices over USBTTY using Python and Angular.
+\SubBulletItem Practiced Agile(SAFe) in a team of 9 people and facilitated training new team members to improve team collaboration.
+\SubBulletItem Used GitLab CI/CD to build docker images and automate testing.
+\SubBulletItem Used Test Driven Development to maintain high quality code.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://apolloei.com/}{\textbf{Apollo Enterprise Imaging}},  Fort Collins, CO
+\hfill
+\DatestampYMD{2018}{08}{01} --
+\DatestampYMD{2019}{05}{01}
+\BulletItem Developer Intern
+\begin{Detail}
+\SubBulletItem Maintained an Angular web application that stores and organizes patient medical records.
+\SubBulletItem Queried database server to visualize data into graphs on web application.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://openwaterfoundation.org/about-owf/staff}{\textbf{Open Water Foundation}},  Fort Collins, CO
+\hfill
+\DatestampYMD{2018}{06}{01} --
+\DatestampYMD{2018}{08}{01}
+\BulletItem Web Developer Intern
+\begin{Detail}
+\SubBulletItem Independently improved screen-size responsiveness of static web pages using CSS and Bootstrap.
+\SubBulletItem Sought out and documented JavaScript tools to streamline development of future projects.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://www.fioreandsons.com/}{\textbf{Fiore \& Sons, Inc.}},  Denver, CO
+\hfill
+\DatestampYMD{2018}{06}{01} --
+\DatestampYMD{2018}{08}{01}
+\BulletItem IT Assistant
+\begin{Detail}
+\SubBulletItem Expanded VLAN network system to increase internet coverage.
+\SubBulletItem Setup and maintained cloud-enabled POE security cameras to ensure coverage of the entire property.
+\end{Detail}
+
+%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\Entry
+\href{https://gitlab.com/Quellus/libgdx-tower-defense}{\textbf{Tower Defense Game}}
+\hfill
+Present
+\Gap
+\begin{Detail}
+\BulletItem A basic tower defense game written from scratch using Java and the LibGDX graphics library.
+\BulletItem Written with Object Oriented design patterns.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://gitlab.com/Quellus/ncurses-game}{\textbf{Enemy Avoider Game}}
+\hfill
+\DatestampYMD{2020}{02}{23}
+\Gap
+\begin{Detail}
+\BulletItem  Created over 24 hours for the HackCU 2019 hackathon in order to learn the challenges and concepts useful for designing a game engine.
+\BulletItem A basic enemy avoider game in the command line developed using Ncurses library with C++.
+\end{Detail}
+
+%%%%%%%%%%
+%% Education %%
+%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.colostate.edu/}{\textbf{Colorado State University}},  Fort Collins, CO
+\hfill
+\DatestampYMD{2019}{05}{20}
+\begin{Detail}
+Bachelor of Science in Computer Science
+\end{Detail}
+
+\end{document}
