@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-        <meta name="description" content="Marcel Fiore - Software Engineer">
-        <meta name="author" content="Marcel Fiore">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>Marcel Fiore Portfolio</title>
-        <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
-        <script src="js/tabbed-panel.js"></script>
-    </head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="description" content="Marcel Fiore - Software Engineer">
+    <meta name="author" content="Marcel Fiore">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Marcel Fiore Portfolio</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
+    <script src="js/tabbed-panel.js"></script>
+  </head>
 
-    <body style="background-color:#D6E5FF;">
-        <div style="background-color: #B3D5FF; line-height: normal;">
-            <img src="images/MarcelFiorePicture.JPG" style="margin: 25px; display: inline-block; width: 250px; vertical-align: middle; line-height: normal;">
+  <body style="background-color:#D6E5FF;">
+    <div style="background-color: #B3D5FF; line-height: normal;">
+      <img src="images/MarcelFiorePicture.JPG" style="margin: 25px; display: inline-block; width: 250px; vertical-align: middle; line-height: normal;">
 
-            <div style="display: inline-block; margin-left: 25px; margin-bottom: 10px; vertical-align: middle; line-height: normal;">
-                <h1>Marcel Fiore</h1>
-                <h4>Software Engineer</h4>
-                <a href="https://github.com/marcelaf7"><img src="images/GitHub.svg"></a>
-                <a href="https://www.linkedin.com/in/marcel-fiore"><img src="images/LinkedIn.svg"></a>
-            </div>
+      <div style="display: inline-block; margin-left: 25px; margin-bottom: 10px; vertical-align: middle; line-height: normal;">
+        <h1>Marcel Fiore</h1>
+        <h4>Software Engineer</h4>
+        <a href="https://github.com/marcelaf7"><img src="images/GitHub.svg"></a>
+        <a href="https://www.linkedin.com/in/marcel-fiore"><img src="images/LinkedIn.svg"></a>
+      </div>
+    </div>
+    <div>
+      <div id="container">
+        <div class="tabbed-panel">
+          <button class="tab-button active" onclick="tabClick(event, 'About Me')"><h3>About Me</h3></button>
+          <button class="tab-button" onclick="tabClick(event, 'Experience')"><h3>Experience</h3></button>
+          <button class="tab-button" onclick="tabClick(event, 'Projects')"><h3>Projects</h3></button>
         </div>
-        <div>
-            <div id="container">
-                <div class="tabbed-panel">
-                    <button class="tab-button active" onclick="tabClick(event, 'About Me')"><h3>About Me</h3></button>
-                    <button class="tab-button" onclick="tabClick(event, 'Projects')"><h3>Projects</h3></button>
-                    <button class="tab-button" onclick="tabClick(event, 'Qualifications')"><h3>Qualifications</h3></button>
-                </div>
-                <div id="About Me" class="tab-contents" style="display: block;">
-                    <h2>About Me</h2>
-                    <p>I am a Software Engineer and enthusiast for all things open source. I love back end development and mostly experienced in C++ and Python. I am unafraid to dabble in front-end development and have experience with Angular and familiar with JavaScript and CSS. I enjoy spending my free time playing video games, developing open source games, and learning new languages and programming concepts.</p>
+        <div id="About Me" class="tab-contents" style="display: block;">
+          <h2>About Me</h2>
+          <p>I am a Software Engineer and enthusiast for all things open source. I love back end development and mostly experienced in C++ and Python. I am unafraid to dabble in front-end development and have experience with Angular and familiar with JavaScript and CSS. I enjoy spending my free time playing video games, developing open source games, and learning new languages and programming concepts.</p>
 
-                    <h2>Professional Experience</h2>
+          <h2>Qualifications</h2>
+          <ul>
+            <li><h4 style="display: inline;">Programming languages: </h4><p style="display: inline;">C++, Python, Angular, Java</p></li>
+            <br>
+            <li><h4 style="display: inline;">Technologies: </h4><p style="display: inline;">Linux (Debian, Redhat), Git, Gitlab, Perforce Helix, Docker</p></li>
+            <br>
+            <li><h4 style="display: inline;">Knowledge: </h4><p style="display: inline;">Scrum (SAFe), Test Driven Development, Object Oriented Design, GitFlow</p></li>
+          </ul>
 
-                    <p class="list-header">Software Engineer </p><h4 class="list-title">CACI International</h4><p class="list-date"> - May 2019 to February 2021</p>
-                    <ul class="list-description">
-                        <li>Created a simulator for LTE and UMTS mobiles in order to test devices that could otherwise only be tested with physical hardware</li>
-                        <li>Added new features and fixed bugs in simulator to meet customer vision using C++, Python, and Angular.</li>
-                        <li>Increased reliability and improved minutes-long testing process to an almost instant process.</li>
-                        <li>Developed tools to easily diagnose Linux devices over USBTTY using Python and Angular.</li>
-                        <li>Facilitated training new team members to improve team collaboration.</li>
-                    </ul>
-
-                    <p class="list-header">Developer Intern </p><h4 class="list-title">Apollo Enterprise Imaging</h4><p class="list-date"> - August 2018 to May 2019</p>
-                    <ul class="list-description">
-                        <li>Maintained Angular web application that stores and organizes patient medical records.</li>
-                        <li>Queried database server to visualize data into graphs on web application.</li>
-                    </ul>
-
-                    <p class="list-header">Web Developer Intern </p><h4 class="list-title">Open Water Foundation</h4><p class="list-date"> - June 2018 to August 2018</p>
-                    <ul class="list-description">
-                        <li>Independently improved screen-size responsiveness of static web pages using HTML, CSS, and Bootstrap.</li>
-                        <li>Sought out and documented JavaScript tools to streamline development of future projects.</li>
-                    </ul>
-
-                    <p class="list-header">IT Assistant </p><h4 class="list-title">Fiore & Sons, Inc.</h4><p class="list-date"> - May 2017 to August 2017</p>
-                    <ul class="list-description">
-                        <li>Expanded VLAN network system to increase internet coverage.</li>
-                        <li>Setup, maintained, and troubleshot Ethernet-based security cameras to ensure camera coverage of entire property.</li>
-                    </ul>
-
-                </div>
-                <div id="Projects" class="tab-contents">
-                    <h2>Projects</h2>
-
-                    <h4 class="list-header">Tower Defense Game</h4>
-                    <ul class="list-description">
-                        <li>A basic tower defense written from scratch using Java and the LibGDX graphics library.</li>
-                        <li>Written with Object Oriented Design patterns.</li>
-                    </ul>
-
-                    <h4 class="list-header">Enemy Avoider Game</h4>
-                    <ul class="list-description">
-                        <li>Created over 24 hours for the HackCU 2019 hackathon in order to learn the challenges and concepts important to designing a game engine.</li>
-                        <li>A basic enemy avoider game in the command line developed using Ncurses with C++.</li>
-                    </ul>
-
-                </div>
-                <div id="Qualifications" class="tab-contents">
-                    <h2>Qualifications</h2>
-                    <ul>
-                        <li><h4 style="display: inline;">Programming languages: </h4><p style="display: inline;">C++, Python, Angular, Java</p></li>
-                        <br>
-                        <li><h4 style="display: inline;">Technologies: </h4><p style="display: inline;">Linux (Debian, Redhat), Git, Gitlab, Perforce Helix, Docker</p></li>
-                        <br>
-                        <li><h4 style="display: inline;">Knowledge: </h4><p style="display: inline;">Scrum (SAFe), Test Driven Development, Object Oriented Design, GitFlow</p></li>
-                    </ul>
-                </div>
-           </div>
         </div>
-    </body>
+        <div id="Experience" class="tab-contents">
+          <h2>Professional Experience</h2>
 
-    <footer>
-        <h4 style="margin-left: 10px; left: 0; position: absolute;">mf@marcelfiore.com</h4>
-        <h4 style="margin-right: 10px; right: 0; position: absolute;">&copy; Marcel Fiore 2020</h4>
-    </footer>
+          <p class="list-header">Software Engineer </p><h4 class="list-title">CACI International</h4><p class="list-date"> - May 2019 to February 2021</p>
+          <ul class="list-description">
+            <li>Created a simulator for LTE and UMTS mobiles in order to test devices that could otherwise only be tested with physical hardware</li>
+            <li>Added new features and fixed bugs in simulator to meet customer vision using C++, Python, and Angular.</li>
+            <li>Increased reliability and improved minutes-long testing process to an almost instant process.</li>
+            <li>Developed tools to easily diagnose Linux devices over USBTTY using Python and Angular.</li>
+            <li>Facilitated training new team members to improve team collaboration.</li>
+          </ul>
+
+          <p class="list-header">Developer Intern </p><h4 class="list-title">Apollo Enterprise Imaging</h4><p class="list-date"> - August 2018 to May 2019</p>
+          <ul class="list-description">
+            <li>Maintained Angular web application that stores and organizes patient medical records.</li>
+            <li>Queried database server to visualize data into graphs on web application.</li>
+          </ul>
+
+          <p class="list-header">Web Developer Intern </p><h4 class="list-title">Open Water Foundation</h4><p class="list-date"> - June 2018 to August 2018</p>
+          <ul class="list-description">
+            <li>Independently improved screen-size responsiveness of static web pages using HTML, CSS, and Bootstrap.</li>
+            <li>Sought out and documented JavaScript tools to streamline development of future projects.</li>
+          </ul>
+
+          <p class="list-header">IT Assistant </p><h4 class="list-title">Fiore & Sons, Inc.</h4><p class="list-date"> - May 2017 to August 2017</p>
+          <ul class="list-description">
+            <li>Expanded VLAN network system to increase internet coverage.</li>
+            <li>Setup, maintained, and troubleshot Ethernet-based security cameras to ensure camera coverage of entire property.</li>
+          </ul>
+        </div>
+        <div id="Projects" class="tab-contents">
+          <h2>Projects</h2>
+
+          <h4 class="list-header">Tower Defense Game</h4><p class="list-date"> - Present</p>
+          <ul class="list-description">
+            <li>A basic tower defense written from scratch using Java and the LibGDX graphics library.</li>
+            <li>Written with Object Oriented Design patterns.</li>
+          </ul>
+
+          <h4 class="list-header">Enemy Avoider Game</h4><p class="list-date"> - February 2020</p>
+          <ul class="list-description">
+            <li>Created over 24 hours for the HackCU 2019 hackathon in order to learn the challenges and concepts important to designing a game engine.</li>
+            <li>A basic enemy avoider game in the command line developed using Ncurses with C++.</li>
+          </ul>
+
+          <h4 class="list-header">Document Comparison Program</h4><p class="list-date"> - December 2017</p>
+          <ul class="list-description">
+            <li>A program that compares documents and searches for a document with a similar subject and user-specified reading level.</li>
+            <li>Designed using C++, Object Oriented Priciples, and the Porter Stemming Algorithm to strip words in different forms down to their root word.</li>
+            <li>Analyzed efficiency and prioritized optimizing searching through large files such as full Shakespeare plays.</li>
+            <li>Created over a semester for Software Development with C++ class at Colorado State University.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <h4 style="margin-left: 10px; left: 0; position: absolute;">mf@marcelfiore.com</h4>
+    <h4 style="margin-right: 10px; right: 0; position: absolute;">&copy; Marcel Fiore 2020</h4>
+  </footer>
 </html>
