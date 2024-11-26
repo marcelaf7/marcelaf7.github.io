@@ -10,7 +10,7 @@
     <script src="js/tabbed-panel.js"></script>
   </head>
 
-  <body style="background-color:#D6E5FF;">
+  <body style="background-color: #FFF;">
     <div style="background-color: #B3D5FF; line-height: normal;">
       <img src="images/MarcelFiorePicture.JPG" style="margin: 25px; display: inline-block; width: 250px; vertical-align: middle; line-height: normal;">
 
@@ -25,12 +25,12 @@
       <div id="container">
         <div class="tabbed-panel">
           <button class="tab-button active" onclick="tabClick(event, 'About Me')"><h3>About Me</h3></button>
-          <button class="tab-button" onclick="tabClick(event, 'Experience')"><h3>Experience</h3></button>
           <button class="tab-button" onclick="tabClick(event, 'Projects')"><h3>Projects</h3></button>
+          <button class="tab-button" onclick="tabClick(event, 'Experience')"><h3>Experience</h3></button>
         </div>
         <div id="About Me" class="tab-contents" style="display: block;">
           <h2>About Me</h2>
-          <p>I am a Software Engineer and electronics tinkerer. I love C++ and primarily experienced with the LTE stack. I spend my free time tinkering with microcontrollers and Linux systems. My most ambitious project so far has been a DIY thermostat for my HVAC system.</p>
+          <p>I am a Software Engineer and tinkerer. I love C++. I often spend my free time tinkering with microcontrollers and Linux systems. Recently, I started a new hobby as a solo game developer.</p>
 
           <h2>Qualifications</h2>
           <ul>
@@ -40,7 +40,41 @@
             <br>
             <li><h4 style="display: inline;">Knowledge: </h4><p style="display: inline;">Embedded Systems, Scrum (SAFe), Agile, Test Driven Development, Object Oriented Design</p></li>
           </ul>
+        </div>
+        <div id="Projects" class="tab-contents">
+          <h2>Projects</h2>
 
+          <a class="link" target="_blank" href="https://github.com/quellus/GDTuber"><h4 class="list-header">GDTuber</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - July 2024 to Present</p>
+          <ul class="list-description">
+            <li>Developed and managed an open source PNG Tuber application using the Godot game engine.</li>
+            <li>Managed issues and pull requests enabling contributors to write documentation, solve bugs, and add features.</li>
+          </ul>
+
+          <a class="link" target="_blank" href="https://github.com/code807/to-the-lake"><h4 class="list-header">To The Lake</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - June 2024</p>
+          <ul class="list-description">
+            <li>A small 2D RPG created in Godot over 8 days for Godot Wild Jam #70.</li>
+            <li>All art and code created from scratch during the event.</li>
+          </ul>
+
+          <a class="link" target="_blank" href="https://gitlab.com/Quellus/rpi-thermostat"><h4 class="list-header">Rpi Thermostat</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - July 2022 to June 2023</p>
+          <ul class="list-description">
+            <li>Developed a remotely monitorable and controllable thermostat utilizing a REST API and Apache server.</li>
+            <li>Created code structure in Python for system logic.</li>
+            <li>Designed flexible environmental sensors by wirelessly networking embedded systems.</li>
+            <li>Modeled and 3D printed closures for environmental sensors.</li>
+          </ul>
+
+          <a class="link" target="_blank" href="https://gitlab.com/Quellus/libgdx-tower-defense"><h4 class="list-header">Tower Defense Game</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - March 2020 to Februrary 2021</p>
+          <ul class="list-description">
+            <li>A basic tower defense written from scratch using Java and the LibGDX graphics library.</li>
+            <li>Written with Object Oriented Design patterns.</li>
+          </ul>
+
+          <a class="link" target="_blank" href="https://gitlab.com/Quellus/ncurses-game"><h4 class="list-header">Enemy Avoider Game</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - February 2020</p>
+          <ul class="list-description">
+            <li>Created over 24 hours for the HackCU 2019 hackathon in order to learn the challenges and concepts important to designing a game engine.</li>
+            <li>A basic enemy avoider game in the command line developed using Ncurses with C++.</li>
+          </ul>
         </div>
         <div id="Experience" class="tab-contents">
           <h2>Professional Experience</h2>
@@ -49,8 +83,7 @@
           <ul class="list-description">
             <li>Developed and managed open source games and tools created with the Godot game engine.</li>
             <li>Participated in Game Jam events creating games over a short period of time with a small team.</li>
-            <li>Shared insights and answer technical questions while live streaming to help viewers with their own devel-
-              opment and learning.</li>
+            <li>Shared insights and answer technical questions while live streaming to help viewers with their own development and learning.</li>
           </ul>
 
           <p class="list-header">Software Engineer </p><a class="link" target="_blank" href="https://arka.org/"><h4 class="list-title">ARKA (Amergint Technologies)</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - September 2024 to May 2024</p>
@@ -87,41 +120,6 @@
           <ul class="list-description">
             <li>Expanded VLAN network system to increase internet coverage.</li>
             <li>Setup, maintained, and troubleshot cloud-enabled POE security cameras to ensure coverage of entire property.</li>
-          </ul>
-        </div>
-        <div id="Projects" class="tab-contents">
-          <h2>Projects</h2>
-
-          <a class="link" target="_blank" href="https://github.com/quellus/GDTuber"><h4 class="list-header">GDTuber</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - July 2024 to Present</p>
-          <ul class="list-description">
-            <li>Developed and managed an open source PNG Tuber application using the Godot game engine.</li>
-            <li>Managed issues and pull requests enabling contributors to write documentation, solve bugs, and add features.</li>
-          </ul>
-
-          <a class="link" target="_blank" href="https://github.com/code807/to-the-lake"><h4 class="list-header">To The Lake</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - June 2024</p>
-          <ul class="list-description">
-            <li>A small 2D RPG created in Godot over 8 days for Godot Wild Jam #70.</li>
-            <li>All art and code created from scratch during the event.</li>
-          </ul>
-
-          <a class="link" target="_blank" href="https://gitlab.com/Quellus/rpi-thermostat"><h4 class="list-header">Rpi Thermostat</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - July 2022 to June 2023</p>
-          <ul class="list-description">
-            <li>Developed a remotely monitorable and controllable thermostat utilizing a REST API and Apache server.</li>
-            <li>Created code structure in Python for system logic.</li>
-            <li>Designed flexible environmental sensors by wirelessly networking embedded systems.</li>
-            <li>Modeled and 3D printed closures for environmental sensors.</li>
-          </ul>
-
-          <a class="link" target="_blank" href="https://gitlab.com/Quellus/libgdx-tower-defense"><h4 class="list-header">Tower Defense Game</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - March 2020 to Februrary 2021</p>
-          <ul class="list-description">
-            <li>A basic tower defense written from scratch using Java and the LibGDX graphics library.</li>
-            <li>Written with Object Oriented Design patterns.</li>
-          </ul>
-
-          <a class="link" target="_blank" href="https://gitlab.com/Quellus/ncurses-game"><h4 class="list-header">Enemy Avoider Game</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - February 2020</p>
-          <ul class="list-description">
-            <li>Created over 24 hours for the HackCU 2019 hackathon in order to learn the challenges and concepts important to designing a game engine.</li>
-            <li>A basic enemy avoider game in the command line developed using Ncurses with C++.</li>
           </ul>
         </div>
       </div>
