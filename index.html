@@ -11,8 +11,8 @@
   </head>
 
   <body style="background-color: #FFF;">
-    <div style="background-color: #B3D5FF; line-height: normal;">
-      <img src="images/MarcelFiorePicture.JPG" style="margin: 25px; display: inline-block; width: 250px; vertical-align: middle; line-height: normal;">
+    <div style="background-color: #B3D5FF; line-height: normal; border-radius: 10px;">
+      <img src="images/MarcelFiorePicture.JPG" style="margin: 25px; display: inline-block; width: 250px; vertical-align: middle; line-height: normal; border-radius: 10px;">
 
       <div style="display: inline-block; margin-left: 25px; margin-bottom: 10px; vertical-align: middle; line-height: normal;">
         <h1>Marcel Fiore</h1>
@@ -23,24 +23,6 @@
     </div>
     <div>
       <div id="container">
-        <!-- <div class="tabbed-panel"> -->
-          <!-- <button class="tab-button active" onclick="tabClick(event, 'About Me')"><h3>About Me</h3></button> -->
-          <!-- <button class="tab-button active" onclick="tabClick(event, 'Projects')"><h3>Projects</h3></button> -->
-          <!-- <button class="tab-button" onclick="tabClick(event, 'Experience')"><h3>Experience</h3></button> -->
-        <!-- </div> -->
-        <!-- <div id="About Me" class="tab-contents" style="display: block;">
-          <h2>About Me</h2>
-          <p>I am a Software Engineer and tinkerer. I love C++. I often spend my free time tinkering with microcontrollers and Linux systems. Recently, I started a new hobby as a solo game developer.</p>
-
-          <h2>Qualifications</h2>
-          <ul>
-            <li><h4 style="display: inline;">Programming languages: </h4><p style="display: inline;">Python, C++, JavaScript, Java, GDScript</p></li>
-            <br>
-            <li><h4 style="display: inline;">Technologies: </h4><p style="display: inline;">Linux, Git, Docker, Kubernetes, GitLab, GitHub, CI/CD, REST API, CMake</p></li>
-            <br>
-            <li><h4 style="display: inline;">Knowledge: </h4><p style="display: inline;">Embedded Systems, Scrum (SAFe), Agile, Test Driven Development, Object Oriented Design</p></li>
-          </ul>
-        </div> -->
         <div id="Projects" class="tab-contents" style="display:block">
           <h2>Projects</h2>
 
@@ -56,16 +38,28 @@
           </div>
 
           <div>
+            <img class="portfolio-image" src="images/Daycare Isle Screenshot.png">
+            <div class="portfolio-content">
+              <p><a class="link" target="_blank" href="https://code807.itch.io/daycart-isle"><h4 class="list-header">Mystery of Daycart Isle</h4><img class="hyperlink-img" src="images/external-link.svg"/></a> - August 2024</p>
+              <ul class="list-description">
+                <li>A small island to explore using the ability to arbitrarily scale any pickupable object.</li>
+                <li>Created over 72 hours in a team of 2 for GMTK Game Jam</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
             <img class="portfolio-image" src="images/To The Lake Screenshot.png">
             <div class="portfolio-content">
               <p><a class="link" target="_blank" href="https://github.com/code807/to-the-lake"><h4 class="list-header">To The Lake</h4><img class="hyperlink-img" src="images/external-link.svg"/></a> - June 2024</p>
               <ul class="list-description">
-                <li>A small 2D RPG created in Godot over 8 days for Godot Wild Jam #70.</li>
+                <li>A small 2D RPG created in Godot</li>
+                <li>Developed over 8 days in a team of 2 for Godot Wild Jam #70.</li>
                 <li>All art and code created from scratch during the event.</li>
               </ul>
             </div>
           </div>
-          
+
           <div>
             <img class="portfolio-image" src="images/Thermostat Screenshot.png">
             <div class="portfolio-content">
@@ -101,52 +95,6 @@
             </div>
           </div>
         </div>
-        <!-- <div id="Experience" class="tab-contents">
-          <h2>Professional Experience</h2>
-
-          <p class="list-header">Self Employed Game Developer </p><a class="link" target="_blank" href="https://github.com/quellus"><h4 class="list-title">QuellusDev</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - May 2024 to Present</p>
-          <ul class="list-description">
-            <li>Developed and managed open source games and tools created with the Godot game engine.</li>
-            <li>Participated in Game Jam events creating games over a short period of time with a small team.</li>
-            <li>Shared insights and answer technical questions while live streaming to help viewers with their own development and learning.</li>
-          </ul>
-
-          <p class="list-header">Software Engineer </p><a class="link" target="_blank" href="https://arka.org/"><h4 class="list-title">ARKA (Amergint Technologies)</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - September 2024 to May 2024</p>
-          <ul class="list-description">
-            <li>Collaborated within a 4-member team to implement distinctive cloud-based deployments for software defined modems.</li>
-            <li>Independently elevated security and performance standards of cloud infrastructure by transitioning from RHEL 7 to support RHEL 8.</li>
-            <li>Led projects tailoring unique cloud solutions to meet customer requirements, integrating technologies such as Kubernetes, Terraform, Docker, Docker-Compose and AWS with systems formerly running on bare metal.</li>
-          </ul>
-
-          <p class="list-header">Software Engineer T2 </p><a class="link" target="_blank" href="https://www.caci.com/"><h4 class="list-title">CACI International</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - May 2019 to August 2023</p>
-          <ul class="list-description">
-            <li>Extended support and improved performance of an LTE library in C++.</li>
-            <li>Implemented detailed 3GPP specifications in C to extend LTE features of cellular modem firmware.</li>
-            <li>Independently developed a multi-protocol API to test RF hardware on an embedded Linux system.</li>
-            <li>Practiced Agile(SAFe) while developing a C++ application to mock LTE mobiles and ensure a reliable testing environment.</li>
-            <li>Developed a Python tool to aggregate embedded Linux systems health information displayed on an Angular webapp.</li>
-            <li>Achieved successful deliveries while being challenged with minimal external support</li>
-            <li>Additional technologies: Yocto, SDR, GTest, Python unittest, Google Protobuf, Gitlab pipelines, Docker.</li>
-          </ul>
-
-          <p class="list-header">Developer Intern </p><a class="link" target="_blank" href="https://apolloei.com/"><h4 class="list-title">Apollo Enterprise Imaging</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - August 2018 to May 2019</p>
-          <ul class="list-description">
-            <li>Maintained Angular web application that stores and organizes patient medical records.</li>
-            <li>Queried database server to visualize data into graphs on web application.</li>
-          </ul>
-
-          <p class="list-header">Web Developer Intern </p><a class="link" target="_blank" href="http://openwaterfoundation.org/about-owf/staff"><h4 class="list-title">Open Water Foundation</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - June 2018 to August 2018</p>
-          <ul class="list-description">
-            <li>Independently improved screen-size responsiveness of static web pages using HTML, CSS, and Bootstrap.</li>
-            <li>Sought out and documented JavaScript tools to streamline development of future projects.</li>
-          </ul>
-
-          <p class="list-header">IT Assistant </p><a class="link" target="_blank" href="https://www.fioreandsons.com/"><h4 class="list-title">Fiore & Sons, Inc.</h4><img class="hyperlink-img" src="images/external-link.svg"/></a><p class="list-date"> - May 2017 to August 2017</p>
-          <ul class="list-description">
-            <li>Expanded VLAN network system to increase internet coverage.</li>
-            <li>Setup, maintained, and troubleshot cloud-enabled POE security cameras to ensure coverage of entire property.</li>
-          </ul>
-        </div> -->
       </div>
     </div>
   </body>

@@ -45,6 +45,7 @@ a {
 }
 
 #container {
+    border-radius: 10px;
     margin-top: 10px;
     background-color: #9AC2FE;
 }
@@ -91,6 +92,19 @@ a {
     display: inline-block;
     vertical-align: top;
     border:5px solid #000;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .portfolio-content {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .portfolio-content {
+        width: 600px;
+    }
 }
 
 .portfolio-content {
